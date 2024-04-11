@@ -20,7 +20,7 @@ To look for memory issues, you can record a heap profile from Node.js and load i
 In your terminal, pass the `--heap-prof` flag to Node.js when starting your Next.js build:
 
 ```sh
-node --heap-prof next build
+node --heap-prof node_modules/next/dist/bin/next build
 ```
 
 At the end of the build, a `.heapprofile` file will be created by Node.js.
@@ -36,7 +36,7 @@ If you wish to break before any user code starts, you can pass `--inspect-brk` i
 
 Now, you can use a tool such as Chrome DevTools to connect to the debugging port to record and analyze a snapshot of the heap to see what memory is being retained.
 
-See [how to recored and analyze heap snapshots](https://developer.chrome.com/docs/devtools/memory-problems/heap-snapshots) for more information.
+See [how to record and analyze heap snapshots](https://developer.chrome.com/docs/devtools/memory-problems/heap-snapshots) for more information.
 
 ## Webpack build worker
 
